@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sample</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <h5>FAMILIES</h5>
+            <a href="#" class="active">Research Projects</a>
+            <a href="#">Best Cases</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+        </div>
+
+        <div class="main">
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">OUR WORK</a>
+                <a href="#">NEWS</a>
+                <a href="#">CONTACT</a>
+            </nav>
+            <div class="cube-wrap">
+                <div class="cube">
+                    <div class="image-box top">
+                        <img src="images/1.jpg">
+                        <div class="ib-text animate__animated animate__slower">
+                            <h3>: Ice cream</h3>
+                            <button class="btn" type="submit">SEE MORE --> </button>
+                        </div>
+                    </div>
+
+                    <div class="image-box bottom"> 
+                            <img src="images/2.jpg">
+                        <div class="ib-text">
+                            <h3>:Ice cream</h3>
+                            <button class="btn" type="submit">SEE MORE --> </button>
+                        </div>
+                    </div>
+
+                    <div class="image-box front">
+                            <img src="images/3.jpg">
+                        <div class="ib-text">
+                            <h3>:Ice cream</h3>
+                            <button class="btn" type="submit">SEE MORE --> </button>
+                        </div>
+                    </div>
+
+                    <div class="image-box back">
+                            <img src="images/4.jpg">
+                        <div class="ib-text">
+                            <h3>:Ice cream</h3>
+                            <button class="btn" type="submit">SEE MORE --> </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+   
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    </script>
+</body>
+
+</html>

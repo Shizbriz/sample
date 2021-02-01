@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    min-height: 500vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.menu{
+    display: grid;
+    position: fixed;
+    top: 120px;
+    left: 200px;
+    h5{font-size: x-small;}
+    a{margin-bottom: 10px; padding: 20px; font-size: larger;}
+    .active{background-color: red;}
+}
+nav{
+   a{margin: 0 20px};
+   position: fixed;
+   top: 50px;
+   right: 200px;
+   z-index: 3;
+}
+img{
+    width: 100%; 
+    height: 100%;
+}
+
+
+.cube-wrap {
+    --size: 60vmin;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    
+    perspective: 100vmin;
+  }
+  .cube {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg);
+    animation: cube 1s linear;
+  }
+  @keyframes cube {
+    to {
+      transform: rotateX(270deg) ;
+    }
+  }
+  
+  .image-box {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background-color: #eee;
+    backface-visibility: visible;
+    top: calc(var(--size) * -.5);
+    left: calc(var(--size) * -.5);
+  }
+  .top {
+    transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+  }
+  .bottom {
+    transform: rotateX(-90deg) translateZ(calc(var(--size) * .5));
+  }
+  
+  .front {
+    transform:  translateZ(calc(var(--size) * .5));
+  }
+  .back {
+    transform: rotateX(180deg) translateZ(calc(var(--size) * .5));
+  }
+  
+  :root * {
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+  .ib-text{
+    position: absolute; 
+    top: 35%; 
+    left: 15%; 
+    animation: shakeX;
+    animation-duration: 10s; 
+    animation-play-state: running;
+    h3{font-size: 40px; margin-bottom: 0px; text-shadow: 1px 1px 1px black; }
+button{padding: 10px 20px; border-radius: 20px; border: none; box-shadow: 1px 1px 5px gold;background-color: #000000; color: white;}
+
+}
